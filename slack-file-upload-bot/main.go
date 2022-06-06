@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-	os.Setenv("SLACK_BOT_TOKEN", "COPY AND PASTE THE SLACK BOT TOKEN HERE")
-	os.Setenv("CHANNEL_ID", "COPY AND PASTE THE CHANNEL ID HERE") // get the channel id in the slack workspace
+	os.Setenv("SLACK_BOT_TOKEN", "xoxb-3604444405783-3621190105539-aayGfGxZQjiX2HKI6OlfWrTG")
+	os.Setenv("CHANNEL_ID", "C03JWPSBN3A") // get the channel id in the slack workspace
 	api := slack.New(os.Getenv("SLACK_BOT_TOKEN"))
 	channelArr := []string{os.Getenv("CHANNEL_ID")}
 	fileArr := []string{"backend.pdf"}
